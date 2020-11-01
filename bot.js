@@ -19,8 +19,8 @@ bot.addListener("error", (message) => {
 });
 
 bot.addListener("pm", function(from, message) {
-	from = String.toLowerCase(from);
-	message = String.toLowerCase(message);
+	from = from.toLowerCase();
+	message = message.toLowerCase();
 	
 	if(from === owner) {
 		if( message === "quit") {
@@ -33,3 +33,4 @@ bot.addListener("pm", function(from, message) {
 		console.log(from + " tried to control me!");
 	}
 });
+
