@@ -1,0 +1,20 @@
+{
+	"name": "weatherbot",
+	"version": "1.0.0",
+	"keywords": [
+		"util",
+		"functional",
+		"server",
+		"client",
+		"browser"
+	],
+	"author": "rgdra",
+	"contributors": [],
+	"dependencies": {
+		"irc-upd": "^0.11.0",
+		"node-geocoder": "^3.27.0"
+	},
+	"scripts": {
+		"start": "node bot.js"
+	}
+}
