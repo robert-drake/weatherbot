@@ -34,3 +34,9 @@ bot.addListener("pm", function(from, message) {
 	}
 });
 
+bot.addListener("message", (nick, to, text, message) => {
+	if(!text.startsWith("*")) {
+		console.log("Not for me!");
+		return;
+	}
+});
