@@ -1,17 +1,18 @@
 const config  = require("./config/config.json");
 const irc = require("irc-upd");
+const geocode = require("node-geocoder");
 
 const options = {
-	userName: "robweatherbot",
-	realName: "Rob's Weather Bot",
-	password: "6uldv8",
+	userName: config.botName,
+	realName: config.realName,
+	password: config.password,
 	port: 6697,
 	secure: true,
 	selfSigned: true,
-	channels: ["#theasylum"]
+	channels: config.channels
 };
 
-const owner = "robdrake";
+const owner = config.owner;
 
 let bot = new irc.Client("irc.tilde.chat", "robweatherbot", options);
 
