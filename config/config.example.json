@@ -2,6 +2,7 @@
 	"owner": "IRC Username of the bot's owner",
 	"apiKey": "OpenCage API Key https://opencagedata.com",
 	"channels": ["array", "of", "channels", "to", "join"],
-	"botName": "bot's IRC nick"
-	//TODO: finish this
+	"botName": "bot's IRC nick",
+	"realName": "bot's IRC real name",
+	"password": "Nickserv / SASL password"
 }

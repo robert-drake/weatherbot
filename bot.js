@@ -1,3 +1,4 @@
+const config  = require("./config/config.json");
 const irc = require("irc-upd");
 
 const options = {
@@ -35,6 +36,7 @@ bot.addListener("pm", function(from, message) {
 });
 
 bot.addListener("message", (nick, to, text, message) => {
+	console.log(to);
 	if(!text.startsWith("*")) {
 		console.log("Not for me!");
 		return;
